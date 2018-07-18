@@ -1,0 +1,9 @@
+! Begin ~/.config/rofi/config
+
+! Copyright 2016-2018, Ankit R Gadiya
+! BSD 3-Clause License
+
+! Colorscheme
+#include "/usr/share/rofi/themes/gruvbox-dark.theme"
+
+! End ~/.config/rofi/config

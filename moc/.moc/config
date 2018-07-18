@@ -1,0 +1,14 @@
+# Begin ~/.moc/config
+
+# Copyright 2017-2018, Ankit R Gadiya
+# BSD 3-Clause License
+
+# Set playback toggles.
+Repeat = yes
+Shuffle = yes
+AutoNext = yes
+
+# Theme
+Theme = darkdot_theme
+
+# End ~/.moc/config

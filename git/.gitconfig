@@ -1,0 +1,29 @@
+# Begin ~/.gitconfig
+
+# Copyright 2016-2018, Ankit R Gadiya
+# BSD 3-Clause License
+
+[user]
+	name = Ankit R Gadiya
+	email = git@argp.in
+	signingkey = 3A25137FB8A87C77C5EAC226322DB2D680BAFB16
+[commit]
+	gpgsign = true
+[url "ssh://git@github.com/ankitrgadiya/"]
+	insteadof = argh:
+[url "ssh://git@github.com/"]
+	insteadof = gh:
+[url "ssh://git@gitlab.com/ankitrgadiya/"]
+	insteadof = argl:
+[url "ssh://git@gitlab.com/"]
+	insteadof = gl:
+[url "ssh://git@euclid.git/home/git/"]
+	insteadof = local:
+[url "ssh://git@git.argp.in/home/git/"]
+	insteadof = argp:
+[push]
+	default = simple
+[color]
+	ui = true
+
+# End ~/.gitconfig
