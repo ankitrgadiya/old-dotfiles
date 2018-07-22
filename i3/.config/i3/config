@@ -166,7 +166,7 @@ exec_always --no-startup-id urxvtd
 # Key bindings
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
-bindsym $mod+Ctrl+l exec i3lock -c "$S_base03"
+bindsym $mod+Ctrl+l exec i3lock -c 000000
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
