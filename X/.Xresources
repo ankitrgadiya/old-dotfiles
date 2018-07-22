@@ -6,7 +6,6 @@
 ! URxvt config
 
 URxvt.font: xft:Inconsolata:style=Regular:size=11
-URxvt.perl-ext: default,matcher
 URxvt.scrollBar: false
 
 ! For Secondary Screen
