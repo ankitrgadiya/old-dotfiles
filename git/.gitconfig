@@ -19,7 +19,7 @@
 	insteadof = gl:
 [url "ssh://git@euclid.git/home/git/"]
 	insteadof = local:
-[url "ssh://git@git.argp.in/home/git/"]
+[url "ssh://git@arlo.git/home/git/"]
 	insteadof = argp:
 [push]
 	default = simple
