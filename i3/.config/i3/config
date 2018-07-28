@@ -32,7 +32,8 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+q kill
 
 # Application Launcher
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show run -hide-scrollbar \
+			-location 1 -width 100 -bw 2 -lines 1
 # bindsym $mod+d exec --no-startup-id dmenu_run
 
 # Vi like key-bindings
