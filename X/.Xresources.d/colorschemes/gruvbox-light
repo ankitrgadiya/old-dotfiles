@@ -1,0 +1,38 @@
+! Begin ~/.Xresources.d/colorschemes/gruvbox-light
+
+! Copyright 2018, Ankit R Gadiya
+! BSD 3-Clause License
+
+! Gruvbox Light Colorscheme
+
+! Credits:
+!	Gruvbox Vim Colorscheme: https://git.io/5Y2v9Q
+!	Xresources File: https://git.io/fNuPW
+
+*background:              #fbf1c7
+*foreground:              #3c3836
+*fading:                  40
+*fadeColor:               #fdf4c1
+*cursorColor:             #a89984
+*pointerColorBackground:  #79740e
+*pointerColorForeground:  #427b58
+
+
+*color0:  #fdf4c1
+*color1:  #cc241d
+*color2:  #98971a
+*color3:  #d79921
+*color4:  #458588
+*color5:  #b16286
+*color6:  #689d6a
+*color7:  #7c6f64
+*color8:  #928374
+*color9:  #9d0006
+*color10: #79740e
+*color11: #b57614
+*color12: #076678
+*color13: #8f3f71
+*color14: #427b58
+*color15: #3c3836
+
+! End ~/.Xresources.d/colorschemes/gruvbox-dark

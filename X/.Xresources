@@ -4,7 +4,6 @@
 ! BSD 3-Clause License
 
 ! URxvt config
-
 URxvt.font: xft:Inconsolata:style=Regular:size=11
 URxvt.scrollBar: false
 
