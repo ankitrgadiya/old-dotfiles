@@ -3,21 +3,9 @@
 " Copyright 2016-2018, Ankit R Gadiya
 " BSD 3-Clause License
 
-" Vim-Plug ---------------------------------------------------------------------
-call plug#begin('~/.vim/plugged')
-
-" Ranger integration
-Plug 'francoiscabrol/ranger.vim'
-
-" Comments
-Plug 'tomtom/tcomment_vim'
-
-" Themes
-Plug 'morhetz/gruvbox'
-
-" Initialize plugin system
-call plug#end()
-"-------------------------------------------------------------------------------
+" Sane defaults
+set nocompatible
+filetype plugin on
 
 " Disable arrow keys in normal mode
 noremap <Up> <NOP>
