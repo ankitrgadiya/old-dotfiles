@@ -20,7 +20,7 @@
 set $mod Mod4
 
 # Font
-font pango: Cantarell 10
+font pango: Roboto 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
