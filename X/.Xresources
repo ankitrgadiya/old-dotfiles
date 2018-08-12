@@ -4,7 +4,7 @@
 ! BSD 3-Clause License
 
 ! URxvt config
-URxvt.font: xft:Inconsolata:style=Regular:size=11
+URxvt.font: xft:Roboto Mono:style=Medium:size=9
 URxvt.scrollBar: false
 
 ! For Secondary Screen
