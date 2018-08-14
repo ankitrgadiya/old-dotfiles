@@ -9,6 +9,6 @@ Shuffle = yes
 AutoNext = yes
 
 # Theme
-Theme = darkdot_theme
+Theme = transparent-background
 
 # End ~/.moc/config
