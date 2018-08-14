@@ -139,8 +139,8 @@ bindsym $mod+r mode "resize"
 
 # Window
 # class           border     backgr.    text       indicator  child_border
-client.focused    #a89985    #a89984    #ebdbb2    #83a598    #a89984
-client.unfocused  #665c54    #665c54    #ebdbb2    #83a598    #665c54
+client.focused    #93a1a1    #93a1a1    #fdf6e3    #2aa198    #93a1a1
+client.unfocused  #586e75    #586e75    #fdf6e3    #2aa198    #586e75
 
 # Borders
 for_window [class="^(?i)google-chrome"] border pixel 1
@@ -150,12 +150,12 @@ bar {
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
 		position top
 		colors {
-			background #282828
-			separator #a89984
+			background #002b36
+			separator  #93a1a1
 			#                   border      background  text
-			focused_workspace   #282828     #282828     #fbf1c7
-			inactive_workspace  #282828     #282828     #a89984
-			urgent_workspace    #cc241d     #cc241d     #a89984
+			focused_workspace   #002b36     #002b36     #fdf6e3
+			inactive_workspace  #002b36     #002b36     #839496
+			urgent_workspace    #dc322f     #dc322f     #fdf6e3
 		}
 }
 
