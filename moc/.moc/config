@@ -8,7 +8,11 @@ Repeat = yes
 Shuffle = yes
 AutoNext = yes
 
+# Disable time in the list
+Showtime = no
+ShowFormat = no
+
 # Theme
-Theme = transparent-background
+Theme = darkdot_theme
 
 # End ~/.moc/config
