@@ -3,6 +3,21 @@
 " Copyright 2016-2018, Ankit R Gadiya
 " BSD 3-Clause License
 
+" Package Manager
+packadd minpac
+call minpac#init()
+
+" Packages
+call minpac#add('k-takata/minpac', {'type':'opt'})
+call minpac#add('altercation/vim-colors-solarized')
+call minpac#add('francoiscabrol/ranger.vim')
+call minpac#add('senderle/restoreview')
+call minpac#add('tomtom/tcomment_vim')
+
+" Package Commands
+command! PackUpdate call minpac#update()
+command! PackClean  call minpac#clean()
+
 " Sane defaults
 set nocompatible
 filetype plugin on
