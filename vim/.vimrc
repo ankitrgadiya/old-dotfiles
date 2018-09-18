@@ -70,4 +70,7 @@ set path+=**
 " Display menu for tab completion
 set wildmenu
 
+" Removes dashes from fold
+set fillchars="fold:\ "
+
 " End ~/.vimrc
