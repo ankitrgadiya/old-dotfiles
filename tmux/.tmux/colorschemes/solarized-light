@@ -1,3 +1,14 @@
+# Begin ~/.tmux/colorschemes/solarized-light
+
+# Copyright 2018, Ankit R Gadiya
+# BSD 3-Clause License
+
+# Solarized Light Colorscheme
+
+# Credit:
+#	Solarized Vim Colorscheme: https://git.io/fNbS7
+#	Solarized Light Tmux: https://git.io/fAyaR
+
 # Panes
 set -g pane-border-fg white
 set -g pane-border-bg default
@@ -25,3 +36,5 @@ setw -g window-status-attr bold
 setw -g window-status-current-fg brightred
 setw -g window-status-current-bg default
 setw -g window-status-current-attr bold
+
+# End ~/.tmux/colorschemes/solarized-light
