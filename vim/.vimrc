@@ -10,9 +10,10 @@ call minpac#init()
 " Packages
 call minpac#add('k-takata/minpac', {'type':'opt'})
 call minpac#add('altercation/vim-colors-solarized')
+call minpac#add('morhetz/gruvbox')
 call minpac#add('francoiscabrol/ranger.vim')
 call minpac#add('senderle/restoreview')
-call minpac#add('tomtom/tcomment_vim')
+call minpac#add('tpope/vim-commentary')
 
 " Package Commands
 command! PackUpdate call minpac#update()
@@ -20,16 +21,16 @@ command! PackClean  call minpac#clean()
 
 " Sane defaults
 set nocompatible
-filetype plugin on
+filetype plugin indent on
+set history=1000
+set tabpagemax=50
+set incsearch
 
 " Disable arrow keys in normal mode
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-
-" Keymap for matching braces
-noremap % v%
 
 " Line number
 set number
@@ -39,18 +40,20 @@ set relativenumber
 set ruler
 
 " Syntax highlighting
+let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_italic = '1'
 syntax on
 set t_Co=256
 set t_ut=
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 " Tabs
 set tabstop=4
 set shiftwidth=4
 set cindent
 set autoindent
-set list lcs=tab:\|·
+set list lcs=tab:\|·,trail:·
 
 " Use system clipboard by default
 set clipboard=unnamedplus
@@ -72,5 +75,13 @@ set wildmenu
 
 " Removes dashes from fold
 set fillchars="fold:\ "
+
+" Key mappings
+nmap <LEADER>t :!ctags -R .<CR>
+nmap <LEADER>g :vimgrep<SPACE>
+nmap <LEADER>o :copen<CR>
+nmap <LEADER>c :cclose<CR>
+nmap <LEADER>n :cnext<CR>
+nmap <LEADER>p :cprev<CR>
 
 " End ~/.vimrc
