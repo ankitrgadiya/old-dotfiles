@@ -139,24 +139,24 @@ bindsym $mod+r mode "resize"
 
 # Window
 # class           border     backgr.    text       indicator  child_border
-client.focused    #93a1a1    #93a1a1    #fdf6e3    #2aa198    #93a1a1
-client.unfocused  #586e75    #586e75    #fdf6e3    #2aa198    #586e75
+client.focused    #a89984    #a89984    #f9f5d7    #427b58    #a89984
+client.unfocused  #7c6f64    #7c6f64    #f2e5bc    #427b58    #7c6f64
 
 # Borders
-for_window [class="^(?i)chromium"] border pixel 1
-for_window [class="^(?i)thunderbird"] border pixel 1
+for_window [class="^(?i)chromium"] border pixel 2
+for_window [class="^(?i)thunderbird"] border pixel 2
 
 # Status Bar
 bar {
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
 		position top
 		colors {
-			background #002b36
-			separator  #93a1a1
+			background #1d2021
+			separator  #a89984
 			#                   border      background  text
-			focused_workspace   #002b36     #002b36     #fdf6e3
-			inactive_workspace  #002b36     #002b36     #839496
-			urgent_workspace    #dc322f     #dc322f     #fdf6e3
+			focused_workspace   #1d2021     #1d2021     #f9f5d7
+			inactive_workspace  #1d2021     #1d2021     #a89984
+			urgent_workspace    #fb4934     #fb4934     #f9f5d7
 		}
 }
 
@@ -168,7 +168,7 @@ exec_always --no-startup-id urxvtd
 # Key bindings
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
-bindsym $mod+Ctrl+l exec i3lock -c 000000
+bindsym $mod+Ctrl+l exec i3lock -c 1d2021
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%

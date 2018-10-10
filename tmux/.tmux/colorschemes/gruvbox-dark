@@ -1,0 +1,40 @@
+# Begin ~/.tmux/colorschemes/gruvbox-dark
+
+# Copyright 2018, Ankit R Gadiya
+# BSD 3-Clause License
+
+# Gruvbox Dark Colorscheme
+
+# Credit:
+#	Gruvbox Vim Colorscheme: https://git.io/5Y2v9Q
+#	Gruvbox Contrib: https://git.io/fNN4G
+
+# Panes
+set -g pane-border-fg "#b57614"
+set -g pane-border-bg "#282828"
+set -g pane-active-border-fg "#b8bb26"
+set -g pane-active-border-bg "#282828"
+
+# Status line
+set -g status-left '#[fg=yellow,bold]#S'
+set -g status-right '#[fg=yellow,bold]%I:%M'
+set -g status-bg "#282828"
+set -g status-fg "#b57614"
+set -g status-attr default
+
+# Messaging
+set -g message-command-fg "#fb4934"
+set -g message-command-bg "#282828"
+set -g message-bg "#282828"
+set -g message-fg "#fb4934"
+set -g message-attr bold
+
+# Window status
+setw -g window-status-fg "#83a598"
+setw -g window-status-bg "#282828"
+setw -g window-status-attr bold
+setw -g window-status-current-fg "#fb4934"
+setw -g window-status-current-bg "#282828"
+setw -g window-status-current-attr bold
+
+# End ~/.tmux/colorschemes/gruvbox-dark

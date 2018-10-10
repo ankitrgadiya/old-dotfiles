@@ -4,7 +4,7 @@
 ! BSD 3-Clause License
 
 ! URxvt config
-URxvt.font: xft:Iosevka Term:style=Medium:size=10
+URxvt.font: xft:Iosevka Term:style=Medium:size=9
 URxvt.scrollBar: false
 
 ! For Secondary Screen
@@ -17,6 +17,6 @@ URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
 ! Colorscheme
-#include ".Xresources.d/colorschemes/solarized-dark"
+#include ".Xresources.d/colorschemes/gruvbox-dark"
 
 ! End ~/.Xresources
