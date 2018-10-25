@@ -32,9 +32,10 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-" Line number
+" Line number and Fold column
 set number
 set relativenumber
+set foldcolumn=1
 
 " Ruler
 set ruler
