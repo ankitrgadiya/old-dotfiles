@@ -25,9 +25,12 @@ source ~/.scripts/bash_color.sh
 
 # ENV variable
 export EDITOR=vim
-export TERM=xterm-256color
 export GPG_TTY=$(tty)
 export PS1="[\u@\h \w]$ "
+if [[ -z "$TERM" ]]
+then
+	export TERM=xterm-256color
+fi
 
 # Path
 export PATH=$HOME/.scripts:$HOME/.local/bin/:$PATH
