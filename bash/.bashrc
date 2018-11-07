@@ -5,7 +5,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-# [[ $- = *i* ]] && bind TAB:menu-complete
 
 # Bash Completion
 if ! shopt -oq posix
@@ -40,5 +39,13 @@ set -o vi
 
 # Append `cd` to directory names
 shopt -s autocd
+
+# Saner History
+## Source: https://github.com/mrzool/bash-sensible
+shopt -s histappend
+shopt -s cmdhist
+HISTSIZE=500000
+HISTFILESIZE=100000
+HISTCONTROL="erasedups:ignoreboth"
 
 # End ~/.bashrc
