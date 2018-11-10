@@ -145,6 +145,7 @@ client.unfocused  #7c6f64    #7c6f64    #f2e5bc    #427b58    #7c6f64
 # Borders
 for_window [class="^(?i)chromium"] border pixel 2
 for_window [class="^(?i)thunderbird"] border pixel 2
+for_window [class="^(?i)zathura"] border pixel 2
 
 # Status Bar
 bar {
