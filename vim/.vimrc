@@ -60,7 +60,7 @@ set foldmethod=manual
 
 " Syntax highlighting
 syntax on
-let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'medium'
 let g:gruvbox_italic = '1'
 let g:gruvbox_vert_split='bg2'
 colorscheme gruvbox
@@ -105,7 +105,7 @@ if has('gui_running')
 	set guioptions-=e
 	set guioptions-=r
 	set guioptions-=L
-	set guifont=Iosevka\ Type\ Medium\ 11
+	set guifont=Iosevka\ Type\ Medium\ 13
 endif
 
 " Remove trailing space
