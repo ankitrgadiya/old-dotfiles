@@ -28,6 +28,7 @@ alias v='vim'
 alias vi='vim'
 alias nv='nvim'
 alias nvi='nvim'
+alias music='mpv --no-video --loop=inf --shuffle'
 
 # Human friendly
 alias df='df --human'
