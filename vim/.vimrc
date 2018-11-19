@@ -14,6 +14,7 @@ packadd minpac
 call minpac#init()
 
 "" Packages
+call minpac#add('altercation/vim-colors-solarized')
 call minpac#add('k-takata/minpac', {'type':'opt'})
 call minpac#add('morhetz/gruvbox')
 call minpac#add('senderle/restoreview')
@@ -21,7 +22,6 @@ call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-surround')
 
 "" Disabled Packages
-" call minpac#add('altercation/vim-colors-solarized')
 " call minpac#add('francoiscabrol/ranger.vim')
 
 "" Package Commands
@@ -60,10 +60,10 @@ set foldmethod=manual
 
 " Syntax highlighting
 syntax on
-let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_italic = '1'
-let g:gruvbox_vert_split='bg2'
-colorscheme gruvbox
+" let g:gruvbox_contrast_dark = 'medium'
+" let g:gruvbox_italic = '1'
+" let g:gruvbox_vert_split='bg2'
+colorscheme solarized
 
 " Key mappings
 
