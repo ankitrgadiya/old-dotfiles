@@ -1,0 +1,18 @@
+! Begin ~/.config/rofi/themes/solarized-dark.theme
+
+! Copyright 2018, Ankit R Gadiya
+! BSD 3-Clause License
+
+! Solarized Dark Colorscheme
+
+! Credit:
+!	Solarized Vim Colorscheme: https://git.io/fNbS7
+!	Solarized Dark Tmux: https://git.io/fAyan
+
+rofi.color-enabled: true
+rofi.color-window:  #002b37, #93a1a1, #839496
+rofi.color-normal:  #002b37, #93a1a1, #002b37, #003642, #819396
+rofi.color-active:  #073642, #008ed4, #002b37, #003642, #008ed4
+rofi.color-urgent:  #002b37, #da4281, #002b37, #003642, #da4281
+
+! End ~/.config/rofi/themes/solarized-dark.theme
