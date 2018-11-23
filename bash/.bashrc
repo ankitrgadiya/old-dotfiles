@@ -26,13 +26,14 @@ source ~/.scripts/bash_color.sh
 export EDITOR=vim
 export GPG_TTY=$(tty)
 export PS1="[\u@\h \w]$ "
+export GOPATH="$HOME/Codes/go"
 if [[ -z "$TERM" ]]
 then
 	export TERM=xterm-256color
 fi
 
 # Path
-export PATH=$HOME/.scripts:$HOME/.local/bin/:$PATH
+export PATH=$HOME/.scripts:$HOME/.local/bin/:$HOME/.local/go/bin:/usr/local/go/bin:$PATH
 
 # Vi mode
 set -o vi
