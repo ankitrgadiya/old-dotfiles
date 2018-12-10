@@ -51,4 +51,10 @@ alias egrep='egrep --color=auto'
 alias nn='curl --data-urlencode @- "http://nnmm.nl/"'
 alias pb='curl -F "c=@${1:--}" https://ptpb.pw/?u=1'
 
+# Docker
+alias d='docker'
+alias dc='docker-compose'
+alias jekyll='docker run --rm -d -v `pwd`:/data -p 4000:4000 jekyll'
+alias caddy='docker run --rm -d -v `pwd`:/data -p 8000:8000 caddy'
+
 # End ~/.scripts/bash_alias.sh
