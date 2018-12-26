@@ -9,6 +9,7 @@ alias euclid='ssh euclid.local'
 alias debian='ssh debian.local'
 alias arch='ssh arch.local'
 alias arlo='ssh arlo'
+alias sdf='ssh sdf'
 
 # Git
 alias gs='git status'
