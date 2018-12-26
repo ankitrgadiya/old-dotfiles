@@ -172,29 +172,31 @@ set $green   #859900
 
 # Window
 # class           border     backgr.    text       indicator  child_border
-client.focused    #a89984    #a89984    #f9f5d7    #427b58    #a89984
-client.unfocused  #7c6f64    #7c6f64    #f2e5bc    #427b58    #7c6f64
-client.focused    $base1     $base1     #fdf6e3    $cyan      $base1
-client.unfocused  $base01    $base01    #fdf6e3    $cyan      $base01
+# client.focused    #a89984    #a89984    #f9f5d7    #427b58    #a89984
+# client.unfocused  #7c6f64    #7c6f64    #f2e5bc    #427b58    #7c6f64
+# client.focused    $base1     $base1     #fdf6e3    $cyan      $base1
+# client.unfocused  $base01    $base01    #fdf6e3    $cyan      $base01
 
 # Status Bar
 bar {
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
 		position top
-		colors {
-			background $base03
-			separator  $base1
-			#                   border      background  text
-			focused_workspace   $base03     $base03     $base3
-			inactive_workspace  $base03     $base03     $base0
-			urgent_workspace    $red        $red        $base03
-		}
+		# colors {
+		# 	background $base03
+		# 	separator  $base1
+		# 	#                   border      background  text
+		# 	focused_workspace   $base03     $base03     $base3
+		# 	inactive_workspace  $base03     $base03     $base0
+		# 	urgent_workspace    $red        $red        $base03
+		# }
 }
 
 # Borders
-for_window [class="^(?i)chromium"] border pixel 2
-for_window [class="^(?i)thunderbird"] border pixel 2
-for_window [class="^(?i)zathura"] border pixel 2
+# for_window [class="^(?i)chromium"] border pixel 2
+# for_window [class="^(?i)thunderbird"] border pixel 2
+# for_window [class="^(?i)zathura"] border pixel 2
+# for_window [class="^(?i)firefox"] border pixel 2
+for_window [instance="vimanywhere"] floating enable
 
 # Startup Program
 exec_always --no-startup-id feh --bg-scale ~/Pictures/background.png
@@ -204,7 +206,8 @@ exec_always --no-startup-id dunst
 # Key bindings
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
-bindsym $mod+Ctrl+l exec i3lock -c 1d2021
+bindsym $mod+Control+l exec i3lock -c 1d2021
+bindsym $mod+Control+v exec vim-anywhere
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
