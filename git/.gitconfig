@@ -21,6 +21,8 @@
 	insteadof = local:
 [url "ssh://git@arlo.git/home/git/"]
 	insteadof = argp:
+[url "ssh://git@gitlab.com/"]
+	insteadof = https://gitlab.com/
 [push]
 	default = simple
 [color]
