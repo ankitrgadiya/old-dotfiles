@@ -7,6 +7,7 @@
 	name = Ankit R Gadiya
 	email = git@argp.in
 	signingkey = 3A25137FB8A87C77C5EAC226322DB2D680BAFB16
+
 [commit]
 	gpgsign = true
 [url "ssh://git@github.com/ankitrgadiya/"]
@@ -21,8 +22,8 @@
 	insteadof = local:
 [url "ssh://git@arlo.git/home/git/"]
 	insteadof = argp:
-[url "ssh://git@gitlab.com/"]
-	insteadof = https://gitlab.com/
+[url "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/"]
+	insteadof = aws:
 [push]
 	default = simple
 [color]
@@ -31,5 +32,7 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[core]
+	quotepath = false
 
 # End ~/.gitconfig
