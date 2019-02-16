@@ -20,6 +20,7 @@ call minpac#add('morhetz/gruvbox')
 call minpac#add('senderle/restoreview')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-surround')
+call minpac#add('fatih/vim-go')
 
 "" Disabled Packages
 " call minpac#add('francoiscabrol/ranger.vim')
