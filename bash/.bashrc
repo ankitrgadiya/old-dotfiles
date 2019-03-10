@@ -35,8 +35,8 @@ fi
 
 # Path
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$GOPATH/bin:$HOME/.local/go/bin:/usr/local/go/bin
-export PATH=$HOME/.scripts
+export PATH=$GOPATH/bin:$HOME/.local/go/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/.scripts:$PATH
 export MANPATH=$HOME/.local/share/man:$MANPATH
 
 # Vi mode
