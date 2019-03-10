@@ -24,6 +24,8 @@
 	insteadof = argp:
 [url "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/"]
 	insteadof = aws:
+[url "ssh://git@gitlab.com/"]
+	insteadof = https://gitlab.com/
 [push]
 	default = simple
 [color]
