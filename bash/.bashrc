@@ -1,6 +1,6 @@
 # Begin ~/.bashrc
 
-# Copyright 2016-2018, Ankit R Gadiya
+# Copyright 2016-2019, Ankit R Gadiya
 # BSD 3-Clause License
 
 # If not running interactively, don't do anything
@@ -34,7 +34,9 @@ then
 fi
 
 # Path
-export PATH=$HOME/.scripts:$HOME/.local/bin/:$HOME/.local/go/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$GOPATH/bin:$HOME/.local/go/bin:/usr/local/go/bin
+export PATH=$HOME/.scripts
 export MANPATH=$HOME/.local/share/man:$MANPATH
 
 # Vi mode
