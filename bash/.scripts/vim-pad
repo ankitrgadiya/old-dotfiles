@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Copyright 2019, Ankit R Gadiya
+# BSD 3-Cluase License
+
+# This script is inspired by vim-anywhere:
+# https://github.com/cknadler/vim-anywhere
+
+# Make directory if does not exit
+if [[ ! -d /tmp/vim-pad ]]
+then
+	mkdir -p /tmp/vim-pad
+fi
+
+# Create a temporary file
+TEMP=$(mktemp -p /tmp/vim-pad)
+chmod o-r $TEMP
+
+# Open the file in vim
+/usr/bin/urxvt -name vim-pad -e vim $TEMP
+cat $TEMP | xclip -selection clipboard

@@ -1,6 +1,6 @@
 # Begin ~/.config/i3/config
 
-# Copyright 2016-2018, Ankit R Gadiya
+# Copyright 2016-2019, Ankit R Gadiya
 # BSD 3-Clause License
 
 # i3(v4)
@@ -196,7 +196,7 @@ bar {
 # for_window [class="^(?i)thunderbird"] border pixel 2
 # for_window [class="^(?i)zathura"] border pixel 2
 # for_window [class="^(?i)firefox"] border pixel 2
-for_window [instance="vimanywhere"] floating enable
+for_window [instance="vim-pad"] floating enable
 
 # Startup Program
 exec_always --no-startup-id feh --bg-scale ~/Pictures/background.png
@@ -204,10 +204,11 @@ exec_always --no-startup-id dunst
 # exec_always --no-startup-id urxvtd
 
 # Key bindings
+
 bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
 bindsym $mod+Control+l exec i3lock -c 1d2021
-bindsym $mod+Control+v exec vim-anywhere
+bindsym $mod+Control+v exec vim-pad
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
