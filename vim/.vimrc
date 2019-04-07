@@ -1,6 +1,6 @@
 " Begin ~/.vimrc
 
-" Copyright 2016-2018, Ankit R Gadiya
+" Copyright 2016-2019, Ankit R Gadiya
 " BSD 3-Clause License
 
 " Enable modern features
@@ -61,10 +61,10 @@ set foldmethod=manual
 
 " Syntax highlighting
 syntax on
-" let g:gruvbox_contrast_dark = 'medium'
-" let g:gruvbox_italic = '1'
-" let g:gruvbox_vert_split='bg2'
-colorscheme solarized
+let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_italic = '1'
+let g:gruvbox_vert_split='bg2'
+colorscheme gruvbox
 
 " Key mappings
 

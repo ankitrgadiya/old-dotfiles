@@ -4,7 +4,7 @@
 ! BSD 3-Clause License
 
 ! Colorscheme
-#include "/home/elliot/.config/rofi/themes/solarized-dark.theme"
+#include "/usr/share/rofi/themes//gruvbox-dark.theme"
 
 ! Fonts
 rofi.font: Iosevka 13
