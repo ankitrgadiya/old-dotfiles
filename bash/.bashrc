@@ -35,6 +35,7 @@ export GPG_TTY=$(tty)
 export PS1="[\u@\h \w]$ "
 export GOPATH="$HOME/Codes/go"
 export GOROOT="/usr/local/go"
+export GO111MODULE="on"
 if [[ -z "$TERM" ]]
 then
 	export TERM=xterm-256color
