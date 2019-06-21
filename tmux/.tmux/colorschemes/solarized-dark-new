@@ -1,0 +1,29 @@
+# Begin ~/.tmux/colorschemes/solarized-dark
+
+# Copyright 2018, Ankit R Gadiya
+# BSD 3-Clause License
+
+# Solarized Dark Colorscheme
+
+# Credit:
+#	Solarized Vim Colorscheme: https://git.io/fNbS7
+#	Solarized Dark Tmux: https://git.io/fAyan
+
+# Panes
+set -g pane-border-style fg=black,bg=default
+set -g pane-active-border-style fg=brightgreen,bg=default
+
+# Status line
+set -g status-left '#[fg=yellow,bg=black,bold]#S'
+set -g status-right '#[fg=yellow,bg=default,bold]%I:%M'
+set -g status-style bg=black,fg=yellow,default
+
+# Messaging
+set -g message-command-style fg=blue,bg=black
+set -g message-style bg=black,fg=brightred,bold
+
+# Window status
+setw -g window-status-style fg=brightblue,bg=default,bold
+setw -g window-status-current-style fg=brightred,bg=default,bold
+
+# End ~/.tmux/colorschemes/solarized-dark
