@@ -36,5 +36,6 @@
 	prompt = false
 [core]
 	quotepath = false
+	editor = emacsclient -t -a=\\\"\\\"
 
 # End ~/.gitconfig

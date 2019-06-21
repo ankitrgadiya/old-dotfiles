@@ -29,7 +29,8 @@ source ~/.scripts/bash_alias.sh
 source ~/.scripts/bash_color.sh
 
 # ENV variable
-export EDITOR=vim
+export EDITOR="emacsclient -a '' -t"
+export VISUAL="emacsclient -a '' -c"
 export GPG_TTY=$(tty)
 export PS1="[\u@\h \w]$ "
 export GOPATH="$HOME/Codes/go"
