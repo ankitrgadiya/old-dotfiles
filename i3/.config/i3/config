@@ -26,8 +26,8 @@ font pango: Roboto 9
 floating_modifier $mod
 
 # Terminal
-# bindsym $mod+Return exec urxvtc
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvtc
+# bindsym $mod+Return exec urxvt
 
 # Kill focused window
 bindsym $mod+Shift+q kill
