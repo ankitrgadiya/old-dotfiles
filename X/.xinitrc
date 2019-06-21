@@ -7,4 +7,6 @@ xset -b
 xrdb -merge $HOME/.Xresources
 xmodmap $HOME/.Xmodmap
 
+urxvtd -q -f -o
+
 exec i3
