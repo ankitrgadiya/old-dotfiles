@@ -18,6 +18,12 @@ then
 	fi
 fi
 
+# Load ssh-agent
+if [ -e ~/.ssh/ssh-agent-env ]
+then
+	source ~/.ssh/ssh-agent-env > /dev/null
+fi
+
 # External sources
 source ~/.scripts/bash_alias.sh
 source ~/.scripts/bash_color.sh
