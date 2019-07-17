@@ -19,33 +19,21 @@ then
 fi
 
 # Load ssh-agent
-if [ -e ~/.ssh/ssh-agent-env ]
+if [ ! -e ~/.ssh/ssh-agent-env ]
 then
-	source ~/.ssh/ssh-agent-env > /dev/null
+	ssh-agent -s > ~/.ssh/ssh-agent-env
 fi
+source ~/.ssh/ssh-agent-env > /dev/null
 
 # External sources
 source ~/.scripts/bash_alias.sh
 source ~/.scripts/bash_color.sh
 
-# ENV variable
-export EDITOR="emacsclient -a '' -t"
-export VISUAL="emacsclient -a '' -c"
-export GPG_TTY=$(tty)
-export PS1="[\u@\h \w]$ "
-export GOPATH="$HOME/Codes/go"
-export GOROOT="/usr/local/go"
-export GO111MODULE="on"
+# Term
 if [[ -z "$TERM" ]]
 then
 	export TERM=xterm-256color
 fi
-
-# Path
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$GOPATH/bin:$HOME/.local/go/bin:/usr/local/go/bin:$PATH
-export PATH=$HOME/.scripts:$PATH
-export MANPATH=$HOME/.local/share/man:$MANPATH
 
 # Vi mode
 set -o vi
