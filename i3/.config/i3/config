@@ -29,6 +29,9 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvtc
 # bindsym $mod+Return exec urxvt
 
+# Emacs client
+bindsym $mod+c exec emacsclient -c
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
@@ -195,7 +198,7 @@ bar {
 # for_window [class="^(?i)chromium"] border pixel 2
 # for_window [class="^(?i)thunderbird"] border pixel 2
 # for_window [class="^(?i)zathura"] border pixel 2
-# for_window [class="^(?i)firefox"] border pixel 2
+for_window [class="^(?i)firefox"] border pixel 2
 for_window [instance="vim-pad"] floating enable
 
 # Startup Program
